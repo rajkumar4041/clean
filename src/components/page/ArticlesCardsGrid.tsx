@@ -7,7 +7,6 @@ import {
   Image,
   SimpleGrid,
   Text,
-  Title,
 } from '@mantine/core';
 import classes from './ArticlesCardsGrid.module.css';
 

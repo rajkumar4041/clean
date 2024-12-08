@@ -1,5 +1,5 @@
 // import  { useState } from 'react';
-import { Box, Button, Flex, ScrollArea, Title } from '@mantine/core';
+import { Box, Flex, ScrollArea } from '@mantine/core';
 import CustomCarousel from './carousel/CustomCarousel';
 
 import '@mantine/carousel/styles.css';
