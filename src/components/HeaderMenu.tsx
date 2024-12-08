@@ -1,6 +1,6 @@
-import { IconChevronDown } from '@tabler/icons-react';
-import { Avatar, Burger, Center, Container, Flex, Group, Menu, Text, Title } from '@mantine/core';
+import { Avatar, Burger, Center, Flex, Group, Menu, Text, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { IconChevronDown } from '@tabler/icons-react';
 import profileImg from '../assets/profile.jpg';
 import classes from '../style/navbar/HeaderMenu.module.css';
 
