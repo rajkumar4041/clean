@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+// import  { useState } from 'react';
 import { Box, Flex, ScrollArea } from '@mantine/core';
 import CustomCarousel from './carousel/CustomCarousel';
-import { NavbarSimpleColored } from './NavbarSimpleColored';
-
 import '@mantine/carousel/styles.css';
+import { HeaderMenu } from './HeaderMenu';
 
 const LandingPage: React.FC = () => {
-  const [active, setActive] = useState('Billing');
+  // const [active, setActive] = useState('Billing');
 
   // { link: '', label: 'Home', icon: IconHome },
   // { link: '', label: 'Billing', icon: IconReceipt2 },
@@ -16,13 +15,12 @@ const LandingPage: React.FC = () => {
   return (
     <Flex
       h={'100vh'}
+      direction={"column"}
       // bg={'yellow.4'}
     >
-      <Box>
-        <NavbarSimpleColored active={active} setActive={setActive} />
-      </Box>
-      <ScrollArea.Autosize style={{ width: '100%' }}>
-        <Box h={'100vh'} bg={'black'} id={'Home'}>
+      <HeaderMenu />
+      <ScrollArea.Autosize style={{ width: '100%' }} >
+        <Box h={'100vh'} bg={'black'} id={'Home'} >
           <CustomCarousel />
         </Box>
         <Box h={'100vh'} bg={'yellow.3'} id="Billing"></Box>

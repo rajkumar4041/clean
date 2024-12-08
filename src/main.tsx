@@ -1,6 +1,5 @@
-import  { StrictMode } from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-
 // import './index.css'; // Your global styles (optional)
 
 import { createTheme, MantineProvider } from '@mantine/core'; // Import MantineProvider for theming
