@@ -1,4 +1,14 @@
-import { AspectRatio, Card, Container, Image, SimpleGrid, Text } from '@mantine/core';
+import {
+  AspectRatio,
+  Badge,
+  Card,
+  Container,
+  Flex,
+  Image,
+  SimpleGrid,
+  Text,
+  Title,
+} from '@mantine/core';
 import classes from './ArticlesCardsGrid.module.css';
 
 const mockdata = [
@@ -44,8 +54,13 @@ export function ArticlesCardsGrid() {
   ));
 
   return (
-    <Container py={100}>
-      <SimpleGrid cols={{ base: 2, sm:2 }}>{cards}</SimpleGrid>
+    <Container py={40}>
+      <Flex w={'100%'} align={'center'} justify={'center'} mb={30}>
+        <Badge size="xl" variant="gradient" gradient={{ from: 'blue', to: 'violet', deg: 0 }}>
+          Our Services
+        </Badge>
+      </Flex>
+      <SimpleGrid cols={{ base: 2, sm: 2 }}>{cards}</SimpleGrid>
     </Container>
   );
 }
